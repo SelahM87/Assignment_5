@@ -1,3 +1,11 @@
+from dash import Dash, html, dcc 
+from dash.dependencies import Input, Output
+import pandas as pd
+import numpy as np
+import plotly.express as px
+
+
+
 #load data set
 df = pd.read_csv("gdp_pcap.csv")
 # pivot  data frame into long 
